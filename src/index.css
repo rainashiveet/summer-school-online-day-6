@@ -1,0 +1,102 @@
+body{
+  background-color: hsl(0 0% 10%);
+}
+
+.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+
+}
+h1{
+  font-size: 4rem;
+  color: white;
+}
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transform: background-color 0.5s ease;
+}
+.add-button{
+  background-color: hsl(125, 47%, 54%);
+}
+.add-button:hover{
+  background-color: hsl(125, 47%, 4%) ;
+}
+.delete-button{
+  background-color: hsl(10, 90%, 50%);
+}
+.delete-button:hover{
+  background-color: hsl(10, 90%, 40%);
+}
+.move-button{
+  background-color: hsl(243, 90%, 64%);
+}
+.move-button:hover{
+  background-color: hsl(207, 90%, 54%) ;
+}
+input[type="text"]{
+font-size: 1.6rem;
+padding: 10px;
+border: 2px solid hsla(0,0%,80%,0.5);
+border-radius: 5px;
+color: hsla(0,0%,0%,0.5);
+}
+ol{
+  padding: 0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0 0% 97%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0,0%,85%,0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex:1
+}
+.delete-button, .move-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.check-task {
+  width: 18px;
+  height: 18px;
+  accent-color: #5c6bc0; /* Makes the checkbox blue like Gmail */
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.text.done {
+  text-decoration: line-through;
+  color: gray;
+  font-style: italic;
+}
+
+.completed {
+  background-color: #f0f8ff; /* light blue background when completed */
+}
+li {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease;
+}
+
+li.moving {
+  background-color: #e3f2fd; /* light blue flash */
+  transform: scale(1.02);
+}
+
